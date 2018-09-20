@@ -1,4 +1,4 @@
-# Altin Games development Guidelines
+# Altin Games Development Guidelines
 
 * __Check development notes.__ Any details on versions and demands from our design team are kept in a file named `NOTES.md`.
 
