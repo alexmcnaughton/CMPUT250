@@ -1,0 +1,92 @@
+{
+  "config": {
+    "name": "config",
+    "cols": 12,
+    "rows": 8,
+    "anchorX": 0.5,
+    "anchorY": 1,
+    "sampleImg": "C:\\Users\\Zhizhou\\Documents\\Games\\directions_enemy_demo\\img\\characters\\%config-player01.png",
+    "poses": {
+      "move2": {
+        "name": "move2",
+        "speed": 10,
+        "adjust": false,
+        "pattern": [
+          0,
+          1,
+          2
+        ]
+      },
+      "move4": {
+        "name": "move4",
+        "speed": 10,
+        "adjust": false,
+        "pattern": [
+          12,
+          13,
+          14
+        ]
+      },
+      "move6": {
+        "name": "move6",
+        "speed": 10,
+        "adjust": false,
+        "pattern": [
+          24,
+          26,
+          25
+        ]
+      },
+      "move8": {
+        "name": "move8",
+        "speed": 10,
+        "adjust": false,
+        "pattern": [
+          36,
+          37,
+          38
+        ]
+      },
+      "move1": {
+        "name": "move1",
+        "speed": 10,
+        "adjust": false,
+        "pattern": [
+          12,
+          1,
+          14
+        ]
+      },
+      "move3": {
+        "name": "move3",
+        "speed": 10,
+        "adjust": false,
+        "pattern": [
+          0,
+          25,
+          2
+        ]
+      },
+      "move7": {
+        "name": "move7",
+        "speed": 10,
+        "adjust": false,
+        "pattern": [
+          12,
+          37,
+          14
+        ]
+      },
+      "move9": {
+        "name": "move9",
+        "speed": 10,
+        "adjust": false,
+        "pattern": [
+          26,
+          38,
+          25
+        ]
+      }
+    }
+  }
+}
