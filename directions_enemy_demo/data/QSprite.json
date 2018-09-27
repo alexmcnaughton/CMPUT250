@@ -5,7 +5,7 @@
     "rows": 8,
     "anchorX": 0.5,
     "anchorY": 1,
-    "sampleImg": "C:\\Users\\Zhizhou\\Documents\\Games\\directions_enemy_demo\\img\\characters\\%config-player01.png",
+    "sampleImg": "C:\\Users\\ningbo\\Documents\\GitHub\\CMPUT250\\directions_enemy_demo\\img\\characters\\%config-player01.png",
     "poses": {
       "move2": {
         "name": "move2",
@@ -52,9 +52,9 @@
         "speed": 10,
         "adjust": false,
         "pattern": [
-          12,
-          1,
-          14
+          3,
+          4,
+          5
         ]
       },
       "move3": {
