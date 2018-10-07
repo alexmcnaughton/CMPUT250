@@ -25,7 +25,7 @@
  * @help
  *
  * Super Tools Engine
- * Version 1.25
+ * Version 1.30
  * SumRndmDde
  *
  *
@@ -154,7 +154,7 @@ SRD.SuperToolsEngine = SRD.SuperToolsEngine || {};
 SRD.NotetagGetters = SRD.NotetagGetters || [];
 
 var Imported = Imported || {};
-Imported["SumRndmDde Super Tools Engine"] = 1.25;
+Imported["SumRndmDde Super Tools Engine"] = 1.30;
 
 var $dataWindows = {};
 var $dataBasicEX = {};
@@ -203,6 +203,11 @@ _.open = String(params['Auto Open Window']).trim().toLowerCase() === 'true';
 _.banList = JSON.parse(params['Menu Editor Exempt List']);
 
 _.isPlaytest = Utils.isOptionValid('test') && Utils.isNwjs();
+_.isNewNWjs = process.versions['node-webkit'] >= "0.13.0";
+
+if(_.isPlaytest && _.isNewNWjs) {
+	if(!require('fs').existsSync("supertoolsengine.html")) require('fs').writeFileSync("supertoolsengine.html", "<!DOCTYPE html><html><head><title></title></head><body></body></html>");
+}
 
 _.pad = function(value) {
 	return (value < 10) ? "0" + value : value;
@@ -479,9 +484,11 @@ MakerManager.initManager = function() {
 MakerManager.openMaker = function() {
 	if(this._window) this._window.close(true);
 	this.createWindow();
-	this.moveWindow();
-	this.setupWindow();
-	this._window.on('loaded', this.onWindowLoad.bind(this));
+	if(!_.isNewNWjs) {
+		this.moveWindow();
+		this.setupWindow();
+		this._window.on('loaded', this.onWindowLoad.bind(this));
+	}
 };
 
 MakerManager.closeMaker = function() {
@@ -495,15 +502,31 @@ MakerManager.deleteMaker = function() {
 
 MakerManager.createWindow = function() {
 	const gui = require('nw.gui');
-	this._window = gui.Window.open('', {
-		title: "Super Tools Engine  -  Core Editor  |  SumRndmDde",
-		width: 600,
-		height: 680,
-		resizable: false,
-		toolbar: false,
-		icon: "www/icon/icon.png"
-	});
-	this._window.setShowInTaskbar(false);
+	if(_.isNewNWjs) {
+		gui.Window.open('supertoolsengine.html', {
+			title: "Super Tools Engine  -  Core Editor  |  SumRndmDde",
+			width: 600,
+			height: 680,
+			resizable: false,
+			icon: "www/icon/icon.png"
+		}, function(newWindow) {
+			this._window = newWindow;
+			this._window.setShowInTaskbar(false);
+			this.moveWindow();
+			this.setupWindow();
+			this._window.on('loaded', this.onWindowLoad.bind(this));
+		}.bind(this));
+	} else {
+		this._window = gui.Window.open('', {
+			title: "Super Tools Engine  -  Core Editor  |  SumRndmDde",
+			width: 600,
+			height: 680,
+			resizable: false,
+			toolbar: false,
+			icon: "www/icon/icon.png"
+		});
+		this._window.setShowInTaskbar(false);
+	}
 };
 
 MakerManager.moveWindow = function() {
@@ -2963,8 +2986,9 @@ Scene_Boot.prototype.openMaker = function() {
 		DebugManager.removeReopener();
 		const temp = _.move;
 		_.move = false;
+		_.isReopening = true;
 		SceneManager.openMaker();
-		if(temp) MakerManager.window.moveTo(window.screenX + Graphics.boxWidth + 6, window.screenY);
+		if(temp && !_.isNewNWjs) MakerManager.window.moveTo(window.screenX + Graphics.boxWidth + 6, window.screenY);
 		_.move = temp;
 		return;
 	}
