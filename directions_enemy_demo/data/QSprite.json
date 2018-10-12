@@ -361,14 +361,14 @@
   "monster3": {
     "name": "monster3",
     "cols": 12,
-    "rows": 4,
+    "rows": 8,
     "anchorX": 0.5,
     "anchorY": 1,
     "sampleImg": "C:\\Users\\ningbo\\Documents\\GitHub\\CMPUT250\\directions_enemy_demo\\img\\characters\\%config-monster3 move.png",
     "poses": {
       "move2": {
         "name": "move2",
-        "speed": 10,
+        "speed": 5,
         "adjust": false,
         "pattern": [
           36,
@@ -376,12 +376,18 @@
           38,
           39,
           40,
-          41
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
         ]
       },
       "move4": {
         "name": "move4",
-        "speed": 10,
+        "speed": 5,
         "adjust": false,
         "pattern": [
           0,
@@ -394,7 +400,7 @@
       },
       "move6": {
         "name": "move6",
-        "speed": 10,
+        "speed": 5,
         "adjust": false,
         "pattern": [
           17,
@@ -407,15 +413,21 @@
       },
       "move8": {
         "name": "move8",
-        "speed": 10,
+        "speed": 5,
         "adjust": false,
         "pattern": [
-          24,
-          25,
-          26,
-          27,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
           28,
-          29
+          27,
+          26,
+          25,
+          24
         ]
       }
     }
