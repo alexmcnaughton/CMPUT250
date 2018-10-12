@@ -255,26 +255,43 @@
       }
     }
   },
-  "monster3": {
-    "name": "monster3",
-    "cols": 7,
+  "tendril 2": {
+    "name": "tendril 2",
+    "cols": 12,
     "rows": 4,
     "anchorX": 0.5,
     "anchorY": 1,
-    "sampleImg": "C:\\Users\\Zhizhou\\Documents\\Games\\directions_enemy_demo\\img\\characters\\%config-monster3 move.png",
+    "sampleImg": "C:\\Users\\ningbo\\Documents\\GitHub\\CMPUT250\\directions_enemy_demo\\img\\characters\\%config-tendril 2.png",
+    "poses": {
+      "move0": {
+        "name": "move0",
+        "speed": 10,
+        "adjust": false,
+        "pattern": [
+          0
+        ]
+      }
+    }
+  },
+  "monster3": {
+    "name": "monster3",
+    "cols": 12,
+    "rows": 4,
+    "anchorX": 0.5,
+    "anchorY": 1,
+    "sampleImg": "C:\\Users\\ningbo\\Documents\\GitHub\\CMPUT250\\directions_enemy_demo\\img\\characters\\%config-monster3 move.png",
     "poses": {
       "move2": {
         "name": "move2",
         "speed": 10,
         "adjust": false,
         "pattern": [
-          21,
-          22,
-          23,
-          24,
-          25,
-          26,
-          27
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
         ]
       },
       "move4": {
@@ -287,8 +304,7 @@
           2,
           3,
           4,
-          5,
-          6
+          5
         ]
       },
       "move6": {
@@ -296,27 +312,25 @@
         "speed": 10,
         "adjust": false,
         "pattern": [
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13
+          17,
+          16,
+          15,
+          14,
+          13,
+          12
         ]
       },
-      "moev8": {
-        "name": "moev8",
+      "move8": {
+        "name": "move8",
         "speed": 10,
         "adjust": false,
         "pattern": [
-          14,
-          15,
-          16,
-          17,
-          18,
-          19,
-          20
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
         ]
       }
     }
