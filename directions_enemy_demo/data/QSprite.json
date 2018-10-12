@@ -334,5 +334,32 @@
         ]
       }
     }
+  },
+  "tendril_160": {
+    "name": "tendril_160",
+    "cols": 12,
+    "rows": 4,
+    "anchorX": 0.5,
+    "anchorY": 1,
+    "sampleImg": "C:\\Users\\ningbo\\Documents\\GitHub\\CMPUT250\\directions_enemy_demo\\img\\characters\\%config-tendril_160.png",
+    "poses": {
+      "move0": {
+        "name": "move0",
+        "speed": 10,
+        "adjust": false,
+        "pattern": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    }
   }
 }
