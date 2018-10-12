@@ -2,33 +2,14 @@
   "config": {
     "name": "config",
     "cols": 12,
-    "rows": 4,
+    "rows": 8,
     "anchorX": 0.5,
     "anchorY": 1,
-    "sampleImg": "C:\\Users\\Zhizhou\\Documents\\Games\\directions_enemy_demo\\img\\characters\\%config-character.png",
+    "sampleImg": "C:\\Users\\ningbo\\Documents\\GitHub\\CMPUT250\\directions_enemy_demo\\img\\characters\\%config-character.png",
     "poses": {
-      "move2": {
-        "name": "move2",
-        "speed": 10,
-        "adjust": false,
-        "pattern": [
-          36,
-          37,
-          38,
-          39,
-          40,
-          41,
-          42,
-          43,
-          44,
-          45,
-          46,
-          47
-        ]
-      },
       "move4": {
         "name": "move4",
-        "speed": 10,
+        "speed": 3,
         "adjust": false,
         "pattern": [
           10,
@@ -46,7 +27,7 @@
       },
       "move6": {
         "name": "move6",
-        "speed": 10,
+        "speed": 3,
         "adjust": false,
         "pattern": [
           12,
@@ -62,9 +43,28 @@
           22
         ]
       },
+      "move2": {
+        "name": "move2",
+        "speed": 3,
+        "adjust": false,
+        "pattern": [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ]
+      },
       "move8": {
         "name": "move8",
-        "speed": 10,
+        "speed": 3,
         "adjust": false,
         "pattern": [
           24,
@@ -79,6 +79,82 @@
           33,
           34,
           35
+        ]
+      },
+      "move1": {
+        "name": "move1",
+        "speed": 3,
+        "adjust": false,
+        "pattern": [
+          95,
+          94,
+          93,
+          92,
+          91,
+          90,
+          89,
+          88,
+          87,
+          86,
+          85,
+          84
+        ]
+      },
+      "move3": {
+        "name": "move3",
+        "speed": 3,
+        "adjust": false,
+        "pattern": [
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ]
+      },
+      "move7": {
+        "name": "move7",
+        "speed": 3,
+        "adjust": false,
+        "pattern": [
+          83,
+          82,
+          81,
+          80,
+          79,
+          78,
+          77,
+          76,
+          75,
+          74,
+          73,
+          72
+        ]
+      },
+      "move9": {
+        "name": "move9",
+        "speed": 3,
+        "adjust": false,
+        "pattern": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59
         ]
       }
     }
@@ -255,30 +331,117 @@
       }
     }
   },
-  "monster3": {
-    "name": "monster3",
-    "cols": 7,
+  "tendril 2": {
+    "name": "tendril 2",
+    "cols": 12,
     "rows": 4,
     "anchorX": 0.5,
     "anchorY": 1,
-    "sampleImg": "C:\\Users\\Zhizhou\\Documents\\Games\\directions_enemy_demo\\img\\characters\\%config-monster3 move.png",
+    "sampleImg": "C:\\Users\\ningbo\\Documents\\GitHub\\CMPUT250\\directions_enemy_demo\\img\\characters\\%config-tendril 2.png",
     "poses": {
-      "move2": {
-        "name": "move2",
+      "move0": {
+        "name": "move0",
         "speed": 10,
         "adjust": false,
         "pattern": [
-          21,
-          22,
-          23,
-          24,
-          25,
-          26,
-          27
+          0,
+          1,
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          6,
+          7
+        ]
+      }
+    }
+  },
+  "monster3": {
+    "name": "monster3",
+    "cols": 12,
+    "rows": 8,
+    "anchorX": 0.5,
+    "anchorY": 1,
+    "sampleImg": "C:\\Users\\ningbo\\Documents\\GitHub\\CMPUT250\\directions_enemy_demo\\img\\characters\\%config-monster3 move.png",
+    "poses": {
+      "move2": {
+        "name": "move2",
+        "speed": 5,
+        "adjust": false,
+        "pattern": [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
         ]
       },
       "move4": {
         "name": "move4",
+        "speed": 5,
+        "adjust": false,
+        "pattern": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "move6": {
+        "name": "move6",
+        "speed": 5,
+        "adjust": false,
+        "pattern": [
+          17,
+          16,
+          15,
+          14,
+          13,
+          12
+        ]
+      },
+      "move8": {
+        "name": "move8",
+        "speed": 5,
+        "adjust": false,
+        "pattern": [
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24
+        ]
+      }
+    }
+  },
+  "tendril_160": {
+    "name": "tendril_160",
+    "cols": 12,
+    "rows": 4,
+    "anchorX": 0.5,
+    "anchorY": 1,
+    "sampleImg": "C:\\Users\\ningbo\\Documents\\GitHub\\CMPUT250\\directions_enemy_demo\\img\\characters\\%config-tendril_160.png",
+    "poses": {
+      "move0": {
+        "name": "move0",
         "speed": 10,
         "adjust": false,
         "pattern": [
@@ -288,35 +451,36 @@
           3,
           4,
           5,
-          6
-        ]
-      },
-      "move6": {
-        "name": "move6",
-        "speed": 10,
-        "adjust": false,
-        "pattern": [
+          6,
           7,
           8,
-          9,
-          10,
-          11,
-          12,
-          13
+          9
         ]
-      },
-      "moev8": {
-        "name": "moev8",
+      }
+    }
+  },
+  "x12Tendril RIGHT": {
+    "name": "x12Tendril RIGHT",
+    "cols": 12,
+    "rows": 4,
+    "anchorX": 0.5,
+    "anchorY": 1,
+    "sampleImg": "C:\\Users\\ningbo\\Documents\\GitHub\\CMPUT250\\directions_enemy_demo\\img\\characters\\%config-x12Tendril RIGHT.png",
+    "poses": {
+      "move0": {
+        "name": "move0",
         "speed": 10,
         "adjust": false,
         "pattern": [
-          14,
-          15,
-          16,
-          17,
-          18,
-          19,
-          20
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
         ]
       }
     }
